@@ -19,7 +19,7 @@ checks:
 
 tools:
     external_code_coverage:
-        timeout: 600
+        timeout: 50
         runs: 3
 build:
     tests:
