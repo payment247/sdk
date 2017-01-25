@@ -1,0 +1,51 @@
+{
+    "name": "payment247/sdk",
+    "type": "library",
+    "description": "SDK for 247Pay integration",
+    "keywords": [
+        "247Pay",
+        "SDK"
+    ],
+    "homepage": "https://github.com/payment247/SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "247Pay",
+            "email": "support@247pay.com",
+            "homepage": "http://247pay.com",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "php": "~5.6|~7.0",
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "~4.0||~5.0",
+        "squizlabs/php_codesniffer": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Payment247\\SDK\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Payment247\\SDK\\Tests\\": "tests",
+            "Payment247\\SDK\\": "tests/Stubs"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
