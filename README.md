@@ -6,7 +6,7 @@
 [![Coverage Status][ico-scrutinizer]][link-scrutinizer]
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
-[![StyleCI](https://styleci.io/repos/80031144/shield?branch=master)](https://styleci.io/repos/80031144)
+[![StyleCI](https://styleci.io/repos/80045195/shield?branch=master)](https://styleci.io/repos/80045195)
 
 This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
 PSRs you support to avoid any confusion with users and contributors.
