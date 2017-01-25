@@ -24,10 +24,11 @@ tools:
 build:
     tests:
         override:
-                command: phpunit
+            -
+                command: 'phpunit'
                 coverage:
-                    file: build/logs/clover.xml
-                    format: php-clover
+                    file: 'build/logs/clover.xml'
+                    format: 'clover'
     environment:
             php:
                 version: 7.0
