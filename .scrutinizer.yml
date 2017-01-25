@@ -21,3 +21,13 @@ tools:
     external_code_coverage:
         timeout: 600
         runs: 3
+build:
+    tests:
+        override:
+                command: phpunit
+                coverage:
+                    file: build/logs/clover.xml
+                    format: php-clover
+    environment:
+            php:
+                version: 7.0
